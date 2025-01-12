@@ -1,74 +1,51 @@
-<h1>Bootstrap Contents and Typography</h1>
-<hr>
 
-<h2>1. Exploring Bootstrap Typography and Colors</h2>
+---
 
-<b>Objective:</b>
-The aim of this assignment is to familiarize students with Bootstrap's typography and color classes and their application in web design.
+### **Fonts:**
+- **njnaruto.ttf**: Custom font for Naruto-themed text.
+  - Located in `fonts` folder.
+  - Applied via the `@font-face` rule in **index.css** to ensure the font loads properly.
 
-<b>Problem Statement:</b>
-As a budding web developer, you are tasked with enhancing the typography and color scheme of a basic web page using Bootstrap. Your goal is to understand how Bootstrap's typography classes can style text elements effectively and how its color palette can be utilized to create visually appealing designs. Note: You can enhance any of the pages created on previous assignments or create a new one, it's up to you!
+---
 
-<h3>Task 1</h3>
+### **Images:**
+- **Character Images**: Various character images are used as backgrounds for cards.
+  - **Images Used**:
+    - Naruto, Sasuke, Kakashi, Sakura, Madara, Orochimaru, Pain, Itachi (all these images are stored in `/images`).
+  
+---
 
-- Apply Bootstrap typography classes to headings and paragraphs.
+### **CSS Breakdown:**
 
-<h3>Task 2</h3>
+- **default.css**:
+  - **Global styles**: Resets margin, padding, and sets box-sizing for consistency.
+  - **Body Styles**: Background set to a **linear gradient** from dark to orange, creating a Naruto-inspired color scheme.
+  - **Dark Theme Layout**: Uses **CSS Grid** to organize the layout into a header, main content, and footer section.
 
-- Utilize Bootstrap color classes to style links and buttons.
+- **index.css**:
+  - **Font Import**: The custom `NJNaruto` font is applied using `@font-face`.
+  - **Main Content Styling**:
+    - Text headings use **Naruto’s gradient** (a mix of orange shades).
+    - The **card** components display images of characters like Naruto, Sasuke, Kakashi, etc.
+    - **Flip card effect**: On hover, the front and back of the card flip with text animation.
 
-<h3>Task 3</h3>
+---
 
-- Experiment with Bootstrap's text alignment and emphasis classes.
+### **HTML Structure:**
 
-<h3>Task 4</h3>
+- **Main Layout**:
+  - **Header**: Contains a **navbar** with links (Home, Submit Your Character).
+  - **Main Section**: Displays the **Top 8 Characters** using **flexbox** for layout and **flip card effect** to show character details.
+    - Characters include: Naruto, Sasuke, Kakashi, Sakura, Madara, Orochimaru, Pain, and Itachi.
+  - **Footer**: A simple **navbar** for social media links (Facebook, Instagram).
 
-- Customize the background and text color of various sections using Bootstrap's color utilities.
+---
 
-<h3>Task 5</h3>
+### **Key Features**:
+- **Naruto Theme**: The font and gradient colors align with Naruto’s aesthetic (orange, red, and black).
+- **Responsive Design**: The navbar and main content adjust to different screen sizes (via Bootstrap’s grid system).
+- **Interactive Cards**: Character cards flip to reveal more information about each character.
 
-- Create a responsive table with alternate row colors using Bootstrap's table classes.
+---
 
-<b>Expected Outcomes:</b> 
-By completing this assignment, students should be able to:
-
-- Understand how to apply Bootstrap typography classes to headings, paragraphs, and other text elements.
-
-- Apply Bootstrap color classes to style links, buttons, and background colors.
-
-- Utilize Bootstrap's text alignment and emphasis classes effectively.
-
-- Create responsive tables with alternate row colors using Bootstrap's table classes.
-
-<hr>
-
-<h2>2. Enhancing Web Pages with Bootstrap Images and Layouts</h2>
-
-<b>Objective:</b>
-The objective of this assignment is to enable students to incorporate images effectively and structure layouts using Bootstrap's image and layout classes.
-
-<b>Problem Statement:</b>
-As a web developer, your task is to improve the visual appeal and layout structure of a basic web page by integrating images and implementing responsive layouts using Bootstrap. You are required to understand how Bootstrap's image classes can enhance the presentation of visual content and how its layout classes can facilitate responsive design. Note: You can enhance any of the pages created on previous assignments or create a new one, it's up to you!
-
-<h3>Task 1</h3>
-
-- Incorporate responsive images using Bootstrap's image classes.
-
-<h3>Task 2</h3>
-
-- Create a grid layout for image gallery using Bootstrap's grid system.
-
-<h3>Task 3</h3>
-
-- Implement a responsive footer with relevant information and links.
-
-<b>Expected Outcomes:</b>
-Upon completion of this assignment, students should be able to:
-
-- Integrate responsive images using Bootstrap's image classes for improved visual presentation.
-
-- Create grid layouts for image galleries using Bootstrap's grid system to organize visual content effectively.
-
-- Implement responsive footers with relevant information and links using Bootstrap's footer 
-
-- component to enhance user experience.
+This is a **Naruto-themed website** where the characters are showcased using a stylish card layout, cool hover effects, and bright, Naruto-inspired colors. The custom font and background gradients help give it that distinct vibe! 😊
