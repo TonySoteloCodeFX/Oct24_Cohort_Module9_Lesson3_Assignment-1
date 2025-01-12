@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'NJNaruto';
+    src: url('../fonts/njnaruto.ttf') format('truetype'); 
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -6,14 +11,28 @@ main {
 
 h1 {
     margin: 80px 0px 0px 0px;
-    color: #1F456A;
+    color: white;
     font-size: 60px;
-    font-family: "Anton", serif;
-    text-shadow: #1F456A 2px 3px 5px;
+    font-family: 'NJNaruto', sans-serif;
+}
+
+.text-gradient-naruto {
+    font-size: 6rem;
+    font-weight: bold;
+    background: linear-gradient(180deg, #f57c00, #ffca28, #ff3d00);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
     font-family: "Anton", serif;
+    font-family: 'NJNaruto', sans-serif;
+    z-index: 2;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(180deg, #f57c00, #ffca28, #ff3d00);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 
 .top_four, .bottom_four {
@@ -26,6 +45,7 @@ h2 {
 p {
     text-align: justify;
     color: #F4F4F2;
+    z-index: 2;
 }
 
 .card {
@@ -64,7 +84,6 @@ p {
     border: 1px solid #ffffff20;
     backdrop-filter: blur(35px) saturate(120%);
     padding: 0px 20px 20px 20px;
-    text-shadow: #1F456A 2px 3px 5px;
     background-color: #00ffee;
 }
 
@@ -76,10 +95,12 @@ p {
 }
 
 .card:hover .card_side_front {
+    transition-delay: 0.8s;
     transform: rotateY(180deg);
 }
 
 .card:hover .card_side_back {
+    transition-delay: 0.8s;
     transform: rotateY(0deg);
 }
 
@@ -121,4 +142,29 @@ p {
 .itachi_bg {
     background-image: url(/images/Itachi_Uchiha.png);
     background-size: cover;
+}
+
+.darker_bg {
+    width: 350px;
+    height: 400px;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    border-radius: 12px;
+    background-color: rgba(25, 52, 94, .70);
+    transition: 0.5s;
+}
+
+.darker_bg:hover {
+    background-color: rgba(25, 52, 94, 0);
+}
+
+.navbar-brand {
+    font-family: 'NJNaruto', sans-serif;
+    z-index: 2;
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(180deg, #f57c00, #ffca28, #ff3d00);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
